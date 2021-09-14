@@ -1,0 +1,371 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #171836;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --color-text:rgba(255, 255, 255, 0.8);
+    --color-text-white:#fff;
+    --button-color-simple: #F5443B;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.group-header {
+    margin-top: 25px;
+}
+.nav-list {
+    margin-right: 200px;
+}
+
+.list-item {
+    margin: 0 40px;
+}
+
+.af::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-image: url("../media/img/globe.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 2px;
+    position: relative;
+    top: 2px;
+}
+
+.login-item {
+    margin: 0 12px;
+}
+
+.list-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;    
+    line-height: 17px;
+    color: var(--color-text);
+    transition: color 0.2s ease;
+}
+.list-link:hover {
+    color: var(--color-text-white);
+}
+.home {
+    color: var(--color-text-white);
+}
+
+.btn-login {
+    background-color: var(--button-color-simple);
+    padding: 12px 32px 12px 32px;
+    border-radius: 6px;
+    color: var(--color-text-white);
+    border: 2px solid var(--button-color-simple);
+    transition: background 0.2s ease;
+}
+
+.btn-login:hover {
+    background-color: transparent;
+    color: var(--button-color-simple);
+}
+.hero-group {
+    /* margin-top: 20px; */
+    margin-top: 36px;
+}
+.imgs-group {
+    position: relative;
+    left: 0;
+}
+
+.lamp {
+    position: absolute;
+    top: 190px;
+    left: 90px;
+    animation-name: lamp-dance;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lamp-dance {
+        0% {
+            transform: translate(0);
+        }
+
+        50% {
+            transform: translateY(-50px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+}
+
+.book {
+    position:absolute;
+    left: 610px;
+    top: 80px;
+    animation-name: book-dance;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes book-dance {
+        0% {
+            transform: translate(0);
+        }
+
+        50% {
+            transform: translateY(50px);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+}
+.joined {
+    width: 363px;
+    height: 92px;
+    background: linear-gradient(180deg, rgba(76, 94, 157, 0.8) -32.08%, rgba(23, 24, 54, 0.8) 127.36%);
+    border-radius: 20px;
+    position: relative;
+    left: 342px;
+    top: 604px;
+}
+
+.joined-img {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    background-image: url("../media/img/blonde-girl.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.two-join {
+    background-image: url("../media/img/smile-girl.svg");
+    left: 4px;
+}
+
+.three-join {
+    background-image: url("../media/img/nature-man.svg");
+    left: -8px;
+}
+
+.four-join {
+    background-image: url("../media/img/simple-man.svg");
+    left: -19px;
+}
+
+.joined-plus {
+    width: 52px;
+    height: 52px;
+    background: #8087B8;
+    border: 1px solid #6668AA;
+    border-radius: 50%;
+    position: relative;
+    left: -28px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #171836;
+    position: relative;
+    top: 20px;
+}
+.bx {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.joined-text {
+    font-style: normal;
+    font-weight: 500;   
+    font-size: 14px;
+    line-height: 160%;
+    color: #BBBBC4;
+    width: 111px;
+    height: 44px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.red-text {
+    color: var(--button-color-simple);
+}
+
+.title-hero {
+    position: absolute;
+    left: 427px;
+    bottom: 159px;
+}
+.hero-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: var(--color-text-white);
+    width: 984px;
+    height: 219px;
+}
+#hero {
+    background-image: url("../media/img/student-hero-section.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position:left 0;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.hero-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.inp {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #1F2143;
+    padding: 22px 261px 22px 32px;
+    border: none;
+    border-radius: 12px;
+}
+
+.search {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    border: none;
+    background: #282B57;
+    font-size: 20px;
+    right: 65px;
+    top: -6px;
+    color: rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+}
+.bx-search {
+    position: absolute;
+    bottom: 11px;
+    left: 5px;
+}
+
+.buttons-one {
+    position: absolute;
+    bottom: -50px;
+    left: 765px
+}
+
+.buttons-two {
+    position: absolute;
+    bottom: -110px;
+    left: 762px;
+}
+
+.learn-more {
+    background-color:#171836;
+    border: 1px solid rgba(154, 156, 203, 0.6);;
+    padding: 8px 18px 8px 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(154, 156, 203, 0.6);
+    margin: 0 15px;
+    border-radius: 8px;
+}
+#communictaion {
+    height: 348px;
+}
+
+.comm-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.comm-title::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url("../media/img/mentors-img1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 15px;
+    right: 15px;
+}
+.comm-one::before {
+    background-image: url("../media/img/mentors-img2.svg");
+}
+.comm-two::before {
+    background-image: url("../media/img/mentors-img3.svg");
+}
+.comm-text {
+    width: 311px;
+    font-style: normal;
+    font-weight: normal;    
+    font-size: 14px;
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#wanttolearn {
+    margin-top: 120px;
+}
+
+.want-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.want-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+}
