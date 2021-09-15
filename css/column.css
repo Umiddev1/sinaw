@@ -1,11 +1,14 @@
 .fulled-container {
     width: 100%;
+    padding: 0;
 }
   
 .container {
     width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:  auto;
+    margin-right: auto;
 }
   
 .row {

@@ -26,70 +26,68 @@
     <!-- /css -->
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="group-header row between align-center">
-                <a class="logo" href="#"><img src="media/img/Sinauw.svg" alt="logo" width="82" height="39"></a>
-                <nav class="nav-bar">
-                    <ul class="nav-list row">
-                        <li class="list-item"><a class="list-link home" href="#">Home</a></li>
-                        <li class="list-item"><a class="list-link" href="#">Courses</a></li>
-                        <li class="list-item"><a class="list-link" href="#">Webinar</a></li>
-                        <li class="list-item"><a class="list-link" href="#">Pricing</a></li>
-                    </ul>
-                </nav>
-                <ul class="list-login row">
-                    <li class="login-item af"><a class="list-link" href="#">Eng<span><i class='bx bx-globe'></i></span><span><i class='bx bx-chevron-down'></i></span></a></li>
-                    <li class="login-item"><a class="list-link btn-login" href="#">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="imgs-group">
-                <div class="lamp">
-                    <img src="media/img/lampaa.svg" alt="lampaa">
-                </div>
-                <div class="book">
-                    <img src="media/img/book.svg" alt="book">
-                </div>
-                <div class="joined row align-center">
-                    <span class="joined-img"></span>
-                    <span class="joined-img two-join"></span>
-                    <span class="joined-img three-join"></span>
-                    <span class="joined-img four-join"></span>
-                    <span class="joined-plus"><i class='bx bx-plus'></i></span>
-                    <p class="joined-text">More than 80k+ 
-                        Students <span class="red-text">joined!</span></p>
+    <section id="hero">
+        <header class="site-hero">
             <div class="container">
-                <div class="hero-group row">
+                <div class="row align-center between">
+                    <div class="logo-nav">
+                    <div class="logo">
+                        <a class="logo" href="#"><img src="media/img/sinamuw.svg" alt="sinamuw"></a>
+                    </div>
+                    <nav class="site-nav">
+                        <ul class="nav-list">
+                            <li class="nav-item activ"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Webinar</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                    <div class="login">
+                        <ul class="login-list"> 
+                            <li class="login-item"><a class="login-link" href="#">Eng<span><i class='bx bx-globe'></i></span><span><i class='bx bx-chevron-down'></i></span></a></li>
+                            <li class="login-btn-item"><a class="login-btn" href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="hero-des">
+            <div class="fulled-container">
+                <div class="row">
+                    <div class="hero-img col-7">
+                        <div class="join-group">
+                            <div class="join-students row align-center">
+                            <span class="join-student"><img src="media/img/blonde-girl.svg" alt="blonde-girl"></span>
+                            <span class="join-student std-one"><img src="media/img/smile-girl.svg" alt="smile-girl"></span>
+                            <span class="join-student std-two"><img src="media/img/nature-man.svg" alt="nature-man"></span>
+                            <span class="join-student std-three"><img src="media/img/simple-man.svg" alt="smile-man"></span>
+                            <button class="join-student join-btn"><i class='bx bx-plus'></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="title-hero">
-                        <h2 class="hero-title">Grow Your Skills<br>To Advance Your<br>Career Path.</h2>
+                    <div class="hero-content col-5">
+                        <h2 class="hero-title">Grow Your Skills To Advance Your Career Path.</h2>
                         <p class="hero-text">We have something big for you who want to level up!</p>
-                        <form action="https://echo.htmlacademy.ru/">
-                            <div class="learn">
-                                <input class="inp" type="text" name="learn" placeholder="What do you want to learn..." required>
-                                <button class="search"><i class='bx bx-search'></i></button>
-                            </div>
+                        <form class="hero-form">
+                            <input class="inp" type="search" name="search" placeholder="What do you want to learn..." aria-label="search" required>
+                            <button class="search"><i class='bx bx-search'></i></button>
                         </form>
-                        <p class="hero-text">Suggestions</p>
+                        <p class="sugges-text">Suggestions</p>
+                        <div class="buttons-one">
+                            <a class="btns" href="#">UI UX Design</a>
+                            <a class="btns" href="#">CSS Fundamental</a>
+                            <a class="btns" href="#">3D Design Illustration</a>
+                        </div>
+                        <div class="buttons-two">
+                            <a class="btns" href="#">Website Development</a>
+                            <a class="btns" href="#">Logo Design</a>
+                            <a class="btns" href="#">Icon Design</a>
                     </div>
                 </div>
             </div>
-            <div class="buttons-one">
-                <button class="ux learn-more">UI UX Design</button>
-                <button class="css-fund learn-more">CSS Fundamental</button>
-                <button class="design-3d learn-more">3D Design Illustration</button>
-            </div>
-            <div class="buttons-two">
-                <button class="website learn-more">Website Development</button>
-                <button class="logo learn-more">Logo Design</button>
-                <button class="Icon Design learn-more">Icon Design</button>
-            </div>
-        </section>
+        </div>
+    </section>
         <section id="communication">
             <div class="container">
                 <div class="comm-group row between">
@@ -116,8 +114,9 @@
                 </div>
                 <ul class="service__list between">
                     <li class="service__item">
-                            <img class="servcie__item-videos-box-img" src="media/img/w1.png" alt="w1">
-                        <p class="service__item-pretitle">Technology</p>
+                        <span class="servic-video-top">12 Video</span>
+                        <img class="servcie__item-videos-box-img" src="media/img/w1.png" alt="w1">
+                        <a class="service__item-pretitle">Technology</a>
                         <h4 class="service__item-title">Digital Marketing Strategy</h4>
                         <p class="service__item-dec">This course aims to give you deeper understanding of core processes ...</p>
                         <div class="service__item-mentor-block">
@@ -125,12 +124,14 @@
                             <div class="mentor__info">
                                 <h4 class="mentor__name">Joey Piere</h4>
                                 <p class="mentor__position">Mentor</p>
+                                <a class="service-btn" href="#">Access Class</a>
                             </div>
                         </div>
                     </li>
                     <li class="service__item">
-                            <img class="servcie__item-videos-box-img" src="media/img/w2.png" alt="w2">
-                        <p class="service__item-pretitle">Technology</p>
+                        <img class="servcie__item-videos-box-img" src="media/img/w2.png" alt="w2">
+                        <span class="servic-video">7 Videos</span>
+                        <a class="service__item-pretitle">Design</a>
                         <h4 class="service__item-title">Digital Marketing Strategy</h4>
                         <p class="service__item-dec">This course aims to give you deeper understanding of core processes ...</p>
                         <div class="service__item-mentor-block">
@@ -138,12 +139,14 @@
                             <div class="mentor__info">
                                 <h4 class="mentor__name">Joey Piere</h4>
                                 <p class="mentor__position">Mentor</p>
+                                <a class="service-btn" href="#">Access Class</a>
                             </div>
                         </div>
                     </li>
                     <li class="service__item">
-                            <img class="servcie__item-videos-box-img" src="media/img/w3.png" alt="w3">
-                        <p class="service__item-pretitle">Technology</p>
+                        <span class="servic-video-top">12 Videos</span>
+                        <img class="servcie__item-videos-box-img" src="media/img/w3.png" alt="w3">
+                        <a class="service__item-pretitle">Coding</a>
                         <h4 class="service__item-title">Digital Marketing Strategy</h4>
                         <p class="service__item-dec">This course aims to give you deeper understanding of core processes ...</p>
                         <div class="service__item-mentor-block">
@@ -151,12 +154,14 @@
                             <div class="mentor__info">
                                 <h4 class="mentor__name">Joey Piere</h4>
                                 <p class="mentor__position">Mentor</p>
+                                <a class="service-btn" href="#">Access Class</a>
                             </div>
                         </div>
                     </li>
                     <li class="service__item">
-                            <img class="servcie__item-videos-box-img" src="media/img/w4.png" alt="w4">
-                        <p class="service__item-pretitle">Technology</p>
+                        <img class="servcie__item-videos-box-img" src="media/img/w4.png" alt="w4">
+                        <span class="servic-video">7 Videos</span>
+                        <a class="service__item-pretitle">Coding</a>
                         <h4 class="service__item-title">Digital Marketing Strategy</h4>
                         <p class="service__item-dec">This course aims to give you deeper understanding of core processes ...</p>
                         <div class="service__item-mentor-block">
@@ -164,6 +169,7 @@
                             <div class="mentor__info">
                                 <h4 class="mentor__name">Joey Piere</h4>
                                 <p class="mentor__position">Mentor</p>
+                                <a class="service-btn" href="#">Access Class</a>
                             </div>
                         </div>
                     </li>
@@ -219,6 +225,7 @@
                         </div>
                     </div>
                     <div class="pricing-item">
+                        <img class="img-borner" src="media/img/borner.svg" alt="borner">
                         <p class="pricing-item-text text-two">Premium</p>
                         <p class="pricinig-item-text-red"><sup class="dollor">$</sup>75</p> <span class="month">/month</span>
                         <div class="item-list">
@@ -246,12 +253,12 @@
                         <h2 class="apps-title">Get Our Apps, Now!</h2>
                         <p class="apps-text">Reach out our apps everywhere and everytime with Sinauw Mobile Application.</p>
                         <ul class="apps-list row">
-                            <li class="apps-item apps-st"><a class="apps-link" href="#"><img src="media/img/google-play.svg" alt="google-play"></a></li>
-                            <li class="apps-item"><a class="apps-link" href="#"><img src="media/img/apps-store.svg" alt="apps-store"></a></li>
+                            <li class="apps-item apps-st"><a class="apps-link" href="https://play.google.com/store" target="_blank"><img src="media/img/google-play.svg" alt="google-play"></a></li>
+                            <li class="apps-item"><a class="apps-link" href="https://www.apple.com/ru/app-store/" target="_blank"><img src="media/img/apps-store.svg" alt="apps-store"></a></li>
                         </ul>
                     </div>
                     <div class="apps-img-group">
-                        <img src="media/img/apps-image.svg" alt="apps-image">
+                        <img class="app-img" src="media/img/apply-image.svg" alt="apps-image">
                     </div>
                 </div>
             </div>
